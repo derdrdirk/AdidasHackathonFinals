@@ -1,4 +1,6 @@
 AdidasHackathon.pem
 *.ldb
 *.log
-./PrivateNetwork/chain
+PrivateNetwork/chain/*
+chain
+SmartContracts/bin/*
