@@ -24,3 +24,42 @@
 17:10:00.239235 version@stat F·[2] S·1018B[1018B] Sc·[0.50]
 17:10:00.240187 db@janitor F·4 G·0
 17:10:00.240213 db@open done T·3.980807ms
+=============== Jul 2, 2018 (CEST) ===============
+17:15:20.547489 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:15:20.547632 version@stat F·[2] S·1018B[1018B] Sc·[0.50]
+17:15:20.547652 db@open opening
+17:15:20.548046 version@stat F·[2] S·1018B[1018B] Sc·[0.50]
+17:15:20.548877 db@janitor F·4 G·0
+17:15:20.548901 db@open done T·1.238042ms
+=============== Jul 2, 2018 (CEST) ===============
+17:18:03.242191 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:18:03.242316 version@stat F·[2] S·1018B[1018B] Sc·[0.50]
+17:18:03.242336 db@open opening
+17:18:03.242389 journal@recovery F·1
+17:18:03.244529 journal@recovery recovering @8
+17:18:03.245192 memdb@flush created L0@10 N·1 S·302B "eth..f\xa9\xbf,v15":"eth..f\xa9\xbf,v15"
+17:18:03.245411 version@stat F·[3] S·1KiB[1KiB] Sc·[0.75]
+17:18:03.246319 db@janitor F·5 G·0
+17:18:03.246355 db@open done T·4.006564ms
+=============== Jul 2, 2018 (CEST) ===============
+17:18:18.939179 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:18:18.939363 version@stat F·[3] S·1KiB[1KiB] Sc·[0.75]
+17:18:18.939389 db@open opening
+17:18:18.939470 journal@recovery F·1
+17:18:18.941715 journal@recovery recovering @11
+17:18:18.942566 memdb@flush created L0@13 N·1 S·302B "eth..f\xa9\xbf,v17":"eth..f\xa9\xbf,v17"
+17:18:18.942805 version@stat F·[4] S·1KiB[1KiB] Sc·[1.00]
+17:18:18.943690 db@janitor F·6 G·0
+17:18:18.943720 db@open done T·4.311913ms
+17:18:18.943770 table@compaction L0·4 -> L1·0 S·1KiB Q·18
+=============== Jul 2, 2018 (CEST) ===============
+17:19:32.851589 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:19:32.851754 version@stat F·[4] S·1KiB[1KiB] Sc·[1.00]
+17:19:32.851775 db@open opening
+17:19:32.851836 journal@recovery F·1
+17:19:32.854096 journal@recovery recovering @14
+17:19:32.854681 memdb@flush created L0@16 N·1 S·302B "eth..f\xa9\xbf,v19":"eth..f\xa9\xbf,v19"
+17:19:32.854901 version@stat F·[5] S·1KiB[1KiB] Sc·[1.25]
+17:19:32.855793 db@janitor F·7 G·0
+17:19:32.855822 db@open done T·4.035726ms
+17:19:32.855895 table@compaction L0·5 -> L1·0 S·1KiB Q·20
