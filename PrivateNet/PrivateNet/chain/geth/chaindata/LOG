@@ -4,3 +4,37 @@
 13:03:06.612609 version@stat F·[] S·0B[] Sc·[]
 13:03:06.613042 db@janitor F·2 G·0
 13:03:06.613086 db@open done T·5.332276ms
+=============== Jul 2, 2018 (CEST) ===============
+16:51:20.884513 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:51:20.884584 version@stat F·[] S·0B[] Sc·[]
+16:51:20.884591 db@open opening
+16:51:20.884615 journal@recovery F·1
+16:51:20.886741 journal@recovery recovering @1
+16:51:20.942381 memdb@flush created L0@2 N·21261 S·1MiB "\x00\x00\xae..\x82\x88\x11,v15140":"\xff\xfc\x94..\xa5\x05\xa1,v15211"
+16:51:20.945336 version@stat F·[1] S·1MiB[1MiB] Sc·[0.25]
+16:51:20.952598 db@janitor F·3 G·0
+16:51:20.952650 db@open done T·68.045085ms
+16:52:51.454603 db@close closing
+16:52:51.454748 db@close done T·139.758µs
+=============== Jul 2, 2018 (CEST) ===============
+16:52:55.480027 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:52:55.480130 version@stat F·[1] S·1MiB[1MiB] Sc·[0.25]
+16:52:55.480138 db@open opening
+16:52:55.480164 journal@recovery F·1
+16:52:55.482108 journal@recovery recovering @3
+16:52:55.493452 memdb@flush created L0@5 N·3 S·483B "Dat..ion,v21264":"eth..ˏ\xa3,v21263"
+16:52:55.495894 version@stat F·[2] S·1MiB[1MiB] Sc·[0.50]
+16:52:55.502277 db@janitor F·4 G·0
+16:52:55.502299 db@open done T·22.154062ms
+17:06:03.861597 db@close closing
+17:06:03.861709 db@close done T·108.093µs
+=============== Jul 2, 2018 (CEST) ===============
+17:07:07.429252 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:07:07.429369 version@stat F·[2] S·1MiB[1MiB] Sc·[0.50]
+17:07:07.429378 db@open opening
+17:07:07.429407 journal@recovery F·1
+17:07:07.432089 journal@recovery recovering @6
+17:07:07.443213 memdb@flush created L0@8 N·3 S·483B "Dat..ion,v21268":"eth..ˏ\xa3,v21267"
+17:07:07.446251 version@stat F·[3] S·1MiB[1MiB] Sc·[0.75]
+17:07:07.452607 db@janitor F·5 G·0
+17:07:07.452632 db@open done T·23.244334ms
