@@ -1,8 +1,7 @@
 pragma solidity ^0.4.24;
 
-interface tokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) external; }
 
-contract TokenERC20 {
+contract dataholderContract {
     // Public variables of the token
     string public name;
     string public symbol;
@@ -25,7 +24,7 @@ contract TokenERC20 {
      *
      * Initializes contract with initial supply tokens to the creator of the contract
      */
-    function TokenERC20(
+    function dataholderContract(
         uint256 initialSupply,
         string tokenName,
         string tokenSymbol
@@ -103,24 +102,7 @@ contract TokenERC20 {
         return true;
     }
 
-    /**
-     * Set allowance for other address and notify
-     *
-     * Allows `_spender` to spend no more than `_value` tokens on your behalf, and then ping the contract about it
-     *
-     * @param _spender The address authorized to spend
-     * @param _value the max amount they can spend
-     * @param _extraData some extra information to send to the approved contract
-     */
-    function approveAndCall(address _spender, uint256 _value, bytes _extraData)
-        public
-        returns (bool success) {
-        tokenRecipient spender = tokenRecipient(_spender);
-        if (approve(_spender, _value)) {
-            spender.receiveApproval(msg.sender, _value, this, _extraData);
-            return true;
-        }
-    }
+
 
     /**
      * Destroy tokens
@@ -154,9 +136,6 @@ contract TokenERC20 {
         emit Burn(_from, _value);
         return true;
     }
-}
-
-contract dataholderContract is TokenERC20(200000000, "Adidasium", "⚽️") {
 
   mapping(address => Dataholder) dataholders;
   struct Dataholder {
@@ -164,9 +143,6 @@ contract dataholderContract is TokenERC20(200000000, "Adidasium", "⚽️") {
     string password;
     string privateKey;
     address[] dataScientists;
-  }
-
-  constructor () public {
   }
   
   function createDataholder(address _dataholderId, string _password, string _privateKey) public {
