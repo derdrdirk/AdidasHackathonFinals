@@ -33,9 +33,9 @@ contract TokenERC20 {
         totalSupply = initialSupply * 10 ** uint256(decimals);  // Update total supply with the decimal amount
         balanceOf[msg.sender] = totalSupply;                // Give the creator all initial tokens
         // give hard coded additional coins to sample accounts
-        balanceOf[0xf3d829b85b5d56c6f68a46270e620ca0f49dcf89] = 1000;
-        balanceOf[0x94ac4f7faf551a0a5eaa0992246244a8b05a57a1] = 1000;
-        balanceOf[0x62db9fc3fbb662b5f31325ddefa440a649c972ef] = 1000;
+        balanceOf[0x69d43cb8de93a29526e41d4029ab015b83476875] = 1000;
+        balanceOf[0x5ce1ce0c86d3c48af55d4537225f87f4ae09ed01] = 1000;
+        balanceOf[0x187659deb502911311334c34d468da31f1bccb65] = 1000;
         name = tokenName;                                   // Set the name for display purposes
         symbol = tokenSymbol;                               // Set the symbol for display purposes
     }
@@ -216,3 +216,4 @@ contract dataholderContract is TokenERC20(200000000, "Adidasium", "⚽️") {
       return ("forbidden");
   }
 }
+
