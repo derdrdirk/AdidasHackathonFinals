@@ -62,8 +62,8 @@ contract dataholderContract {
   
   function queryData(string _dataholderId, string _dataScientistId, string _buyerId) public {
       transfer(_buyerId, _dataholderId, 2);
-      transfer(_buyerId, _dataholderId, 7);
-      transfer(_buyerId, _dataholderId, 1);
+      transfer(_buyerId, _dataScientistId, 7);
+      transfer(_buyerId, "0xa6ba6a2aed90939f931c1f33be2fbb3ad250a833", 1);
   }
 
   function getKeyFromDataholder(string _dataholderId) constant public returns (string) {
@@ -73,4 +73,3 @@ contract dataholderContract {
       return ("forbidden");
   }
 }
-
