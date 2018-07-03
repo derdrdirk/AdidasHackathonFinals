@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.4.18;
 
 contract dataholderContract {
   mapping (string => uint256) balanceOf;
@@ -15,7 +15,7 @@ contract dataholderContract {
       return balanceOf[user];
   }
 
-  constructor (string coinbase) public {
+  function dataholderContract (string coinbase) public {
       balanceOf[coinbase] = 20000000000;
   }
   
@@ -27,10 +27,9 @@ contract dataholderContract {
     }
   
   function createDataholder(string _dataholderId, string _password, string _privateKey) public {
-      var dataholder = dataholders[_dataholderId];
-      dataholder.shares = false;
-      dataholder.password = _password;
-      dataholder.privateKey = _privateKey;
+      dataholders[_dataholderId].shares = false;
+      dataholders[_dataholderId].password = _password;
+      dataholders[_dataholderId].privateKey = _privateKey;
   }
   
   function addDataScientistToDataholder(string _dataScientistId, string _dataholderId) public {
@@ -49,7 +48,7 @@ contract dataholderContract {
       return (dataholders[_dataholderId].password, dataholders[_dataholderId].privateKey);
   }
   
-  function getKey(string _dataholderId, string _dataScientistId) constant public returns (string) {
+  function getKey(string _dataholderId, string _dataScientistId) public payable returns (string) {
     uint arrayLength = dataholders[_dataholderId].dataScientists.length;
     for (uint i=0; i<arrayLength; i++) {
       if(keccak256(dataholders[_dataholderId].dataScientists[i]) == keccak256(_dataScientistId)) {
@@ -62,7 +61,7 @@ contract dataholderContract {
   
   function queryData(string _dataholderId, string _dataScientistId, string _buyerId) public {
       transfer(_buyerId, _dataholderId, 2);
-      transfer(_buyerId, _dataholderId, 7);
+      transfer(_buyerId, _dataScientistId, 7);
       transfer(_buyerId, _dataholderId, 1);
   }
 

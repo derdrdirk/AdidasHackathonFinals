@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.4.20;
 
 
 // ----------------------------------------------------------------------------
@@ -136,7 +136,7 @@ contract Owned {
     event OwnershipTransferred(address indexed _from, address indexed _to);
 
 
-    constructor() public {
+    function Owned() public {
 
         owner = msg.sender;
 
@@ -208,7 +208,7 @@ contract FixedSupplyToken is ERC20Interface, Owned {
 
     // ------------------------------------------------------------------------
 
-    constructor() public {
+    function FixedSupplyToken() public {
 
         symbol = "ADD";
 
